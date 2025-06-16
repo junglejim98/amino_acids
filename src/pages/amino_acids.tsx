@@ -1,5 +1,4 @@
 import { useState, FormEvent } from "react";
-import styles from "./amino_acids.module.scss"
 
 export default function AminoAcids () {
     const [acids, setAcids] = useState<{first: string; second: string}>({first: '', second: ''});
@@ -30,7 +29,7 @@ export default function AminoAcids () {
                   Вторая последовательность
                 <input type='text' name = 'second' value={acids.second} onChange={handleChange}/>
                 </label>
-                <button disabled={!isSameLength || !acids.first || needLiveCheck}>Проверить кислоты</button>
+                <button disabled={ !acids.first || needLiveCheck }>Проверить кислоты</button>
                   { !isSameLength && attempted && <p>Длины последовательностей не совпадают</p>}
           </form> 
 
