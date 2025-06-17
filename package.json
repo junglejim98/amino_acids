@@ -1,5 +1,6 @@
 {
   "name": "amino_acids",
+  "homepage": "https://junglejim98.github.io/amino_acids",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
